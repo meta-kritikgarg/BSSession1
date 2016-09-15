@@ -6,16 +6,27 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainSite.css">
 
 
     <title>Assignment 1 Updated</title>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header" id="header">
 <div class="container">
+    <div  class="row">
+        <div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-lg-6 col-sm-12"><h1>LOGO</h1></div>
-        <div class=" col-lg-6 col-sm-12 ">
+        <div class=" col-sm-6 "><h1>LOGO</h1></div>
+        <div class="col-sm-6 ">
             <button type="button" class="btn btn-default pull-right" aria-label="Center Align">
                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
             </button>
@@ -25,15 +36,10 @@
 
 </div>
 </header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="navigation">
         <div class="container">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="javascript:void(0)">DASHBOARD <span class="sr-only">(current)</span></a></li>
@@ -48,7 +54,7 @@
     </nav>
 
 <div class="container">
-    <div class="row" id="dashboard">
+    <div class="row" id="dashboard-header">
         <div class="col-sm-12">
         <h3>DASHBOARD</h3>
 
@@ -56,47 +62,55 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="dashboard-body">
         <div class="col-sm-12">
-        <div class="alert alert-success">
-            <p> Indicates a successful or positive action.</p>
+        <div class="alert alert-success bigAlert">
+            <p> This is simple admin template that can be used for your small projects or may be large projects. This is free for personal and commercial use.</p>
         </div>
             </div>
     </div>
 
-    <div class="row" id="dash-panel">
+    <div class="row" id="dashboard-panel">
 
-        <div class="col-sm-3 text-center" id="notification">
-            <button type="button" class="btn btn-default" aria-label="Center Align">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <div class="col-sm-3 text-center " id=" ">
+            <div class="block notification">
+            <button type="button" class="btn btn-default circle" aria-label="Center Align">
+                <span class="fa fa-bell" aria-hidden="true"></span>
             </button>
             <hr>
             <h4>Notification</h4>
+            </div>
         </div>
 
-        <div class="col-sm-3 text-center" id="notification">
-            <button type="button" class="btn btn-default" aria-label="Center Align">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <div class="col-sm-3 text-center " >
+            <div class="block photogalery">
+            <button type="button" class="btn btn-default circle" aria-label="Center Align">
+                <span class="fa fa-camera" aria-hidden="true"></span>
             </button>
             <hr>
-            <h4>Notification</h4>
+            <h4>Photogallery</h4>
         </div>
+            </div>
 
-        <div class="col-sm-3 text-center" id="notification">
-            <button type="button" class="btn btn-default" aria-label="Center Align">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <div class="col-sm-3 text-center " >
+            <div class="block favourite">
+            <button type="button" class="btn btn-default circle" aria-label="Center Align">
+                <span class="fa fa-heart" aria-hidden="true"></span>
             </button>
             <hr>
-            <h4>Notification</h4>
+            <h4>Favourites</h4>
         </div>
+            </div>
 
-        <div class="col-sm-3 text-center" id="notification">
-            <button type="button" class="btn btn-default" aria-label="Center Align">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <div class="col-sm-3 text-center ">
+            <div class="block announcements">
+            <button type="button" class="btn btn-default circle" aria-label="Center Align">
+                <span class="fa fa-volume-up" aria-hidden="true"></span>
             </button>
             <hr>
-            <h4>Notification</h4>
+            <h4>Announcements</h4>
         </div>
+            </div>
 
 
 
@@ -110,7 +124,7 @@
 
         <div class="panel panel-default ">
             <div class="panel-heading ">
-                <h4 class="panel-title pull-left">Panel Heading</h4>
+                <h4 class="panel-title pull-left">Active Notice Panel</h4>
                 <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle  pull-right">
                     <span class="glyphicon glyphicon-user pull-left" aria-hidden="true">
@@ -121,13 +135,13 @@
                 <div class="clearfix"></div>
             </div>
 
-            <div class="panel-body">
+            <div class="panel-body" id="anp-body">
 
 
                 <ul class="list-group">
                     <li class="list-group-item">
                         <button class="btn btn-sm btn-default ">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="fa fa-align-left" aria-hidden="true"></span>
                         </button>
                         Lorem ipsum dolor sit amet ipsum dolor sit amet
                         <span class="label label-warning">Just now</span>
@@ -137,7 +151,7 @@
 
                     <li class="list-group-item">
                         <button class="btn btn-sm btn-default ">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="fa fa-info-circle" aria-hidden="true"></span>
                         </button>
                         Lorem ipsum dolor sit amet ipsum dolor sit amet
                         <span class="label label-info">2 mi chat</span>
@@ -146,7 +160,7 @@
                     <hr>
                     <li class="list-group-item">
                         <button class="btn btn-sm btn-default ">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="fa fa-comments" aria-hidden="true"></span>
                         </button>
                         Lorem ipsum dolor sit amet ipsum dolor sit amet
                         <span class="label label-success">Go!</span>
@@ -154,7 +168,7 @@
                     <hr>
                     <li class="list-group-item">
                         <button class="btn btn-sm btn-default ">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="fa fa-edit" aria-hidden="true"></span>
                         </button>
                         Lorem ipsum dolor sit amet ipsum dolor sit amet
                         <span class="label label-success">Let's Have It</span>
@@ -163,7 +177,7 @@
                 </ul>
 
             </div>
-            <div class="panel-footer">
+            <div class="panel-footer" id="anp-footer">
 
 
                 <a href="javascript:void(0)" class="btn btn-default ">
@@ -175,7 +189,7 @@
 
         <hr>
 
-        <div class="alert alert-warning text-center">
+        <div class="alert alert-warning text-center" id="social-btn">
             <a class="btn  btn-social btn-facebook">
                 <span class="fa fa-facebook"></span>Facebook
             </a>
@@ -252,7 +266,7 @@
 
     <div class="col-md-6">
 
-        <div class="alert alert-danger">
+        <div class="alert alert-danger bigAlert">
             This is a simple admin template that can be used for your small project or may be large projects. This is free for personal and commercial use.
         </div>
 
@@ -313,7 +327,7 @@
 
 
 
-<footer class="page-header">
+<footer class="page-header" id="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
