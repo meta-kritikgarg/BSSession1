@@ -160,6 +160,10 @@
     font-size: small;
 }
 
+#cnm-body form a{
+    margin-bottom: 10px;
+}
+
 #footer{
     color: #eff0f3;
     background-color: #c36464;
